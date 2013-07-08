@@ -46,6 +46,8 @@
 		830DDD03174617FE0015841B /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830DDD02174617FE0015841B /* PhotoCell.xib */; };
 		830DDD071746519D0015841B /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDD051746519D0015841B /* DetailsViewController.m */; };
 		830DDD081746519D0015841B /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830DDD061746519D0015841B /* DetailsViewController.xib */; };
+		B1111B73178B1FC80088D229 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1111B6B178B1FC80088D229 /* libOCMock.a */; };
+		B1111B74178B1FC80088D229 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1111B6B178B1FC80088D229 /* libOCMock.a */; };
 		D25890E33A3AD8C0885078EA /* PhotoCell+ConfigureForPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = D2589AFB9CE73CC0AD9D1CA4 /* PhotoCell+ConfigureForPhoto.m */; };
 		D25890F660237AAA12DBBD2D /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D25892E710DF8060436CED81 /* star.png */; };
 		D258949FDEA7F05E64E81AA3 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D258947BF23A96188E749F91 /* PhotoViewController.m */; };
@@ -134,6 +136,13 @@
 		830DDD041746519D0015841B /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		830DDD051746519D0015841B /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		830DDD061746519D0015841B /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		B1111B6B178B1FC80088D229 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		B1111B6D178B1FC80088D229 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		B1111B6E178B1FC80088D229 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		B1111B6F178B1FC80088D229 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		B1111B70178B1FC80088D229 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		B1111B71178B1FC80088D229 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		B1111B72178B1FC80088D229 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 		D258909D508549D9B89832C5 /* RatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingCell.h; sourceTree = "<group>"; };
 		D25892E710DF8060436CED81 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		D25893599811A7F4D7E9583B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
@@ -157,6 +166,7 @@
 				830DDCBC174613080015841B /* Foundation.framework in Frameworks */,
 				830DDCBE174613080015841B /* CoreGraphics.framework in Frameworks */,
 				D2589A43874AB43F29E2B5D6 /* QuartzCore.framework in Frameworks */,
+				B1111B73178B1FC80088D229 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +177,7 @@
 				3E2DE0D9174D398F00D3BB5C /* libOCMock.a in Frameworks */,
 				830DDCDD174613080015841B /* SenTestingKit.framework in Frameworks */,
 				830DDCDE174613080015841B /* UIKit.framework in Frameworks */,
+				B1111B74178B1FC80088D229 /* libOCMock.a in Frameworks */,
 				830DDCDF174613080015841B /* Foundation.framework in Frameworks */,
 				830DDCE0174613080015841B /* CoreData.framework in Frameworks */,
 			);
@@ -207,6 +218,8 @@
 		830DDCB8174613080015841B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1111B6B178B1FC80088D229 /* libOCMock.a */,
+				B1111B6C178B1FC80088D229 /* OCMock */,
 				830DDCB9174613080015841B /* UIKit.framework */,
 				830DDCBB174613080015841B /* Foundation.framework */,
 				830DDCBD174613080015841B /* CoreGraphics.framework */,
@@ -302,6 +315,19 @@
 				830DDCF7174614350015841B /* User.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		B1111B6C178B1FC80088D229 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				B1111B6D178B1FC80088D229 /* NSNotificationCenter+OCMAdditions.h */,
+				B1111B6E178B1FC80088D229 /* OCMArg.h */,
+				B1111B6F178B1FC80088D229 /* OCMConstraint.h */,
+				B1111B70178B1FC80088D229 /* OCMock.h */,
+				B1111B71178B1FC80088D229 /* OCMockObject.h */,
+				B1111B72178B1FC80088D229 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 		D25892E6B979C5FC4FCDFEC5 /* Resources */ = {
@@ -579,12 +605,18 @@
 		830DDCEF174613080015841B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Scott Cunningham (9UP69XP5A7)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoData/PhotoData-Prefix.pch";
 				INFOPLIST_FILE = "PhotoData/PhotoData-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "56191B43-BB2D-46CF-A953-BC9F98E77375";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -592,12 +624,17 @@
 		830DDCF0174613080015841B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Scott Cunningham (9UP69XP5A7)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoData/PhotoData-Prefix.pch";
 				INFOPLIST_FILE = "PhotoData/PhotoData-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "56191B43-BB2D-46CF-A953-BC9F98E77375";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -614,6 +651,10 @@
 				GCC_PREFIX_HEADER = "PhotoData/PhotoData-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"${TARGET_BUILD_DIR}\"";
 				INFOPLIST_FILE = "PhotoDataTests/PhotoDataTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -633,6 +674,10 @@
 				GCC_PREFIX_HEADER = "PhotoData/PhotoData-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"${TARGET_BUILD_DIR}\"";
 				INFOPLIST_FILE = "PhotoDataTests/PhotoDataTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
